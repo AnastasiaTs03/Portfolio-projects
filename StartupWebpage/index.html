@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="resources\style.css">
+    <title>Startup</title>
+</head>
+
+<body>
+
+    <section id="home">
+        <nav>
+            <ul id="navigation">
+                <li class="navigation-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <li>
+                    <a href="pricing">Pricing</a>
+                </li>
+                <li>
+                    <a href="our-team">Our Team</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="slider">
+            <p id="startup">Startup 3</p>
+            <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="slide active">
+                <h1>Forget About Code</h1>
+                <h5>Startup Framework gives you complete freedom over your creative process – you don't have to think
+                    about any technical aspects. There are no limits and absolutely no coding.</h5>
+            </div>
+
+            <div class="slide">
+                <h1>Design Without Limits</h1>
+                <h5>With a vast set of pre-made components, you can build any layout effortlessly. No technical
+                    knowledge
+                    is required – just drag, drop, and create.</h5>
+            </div>
+
+            <div class="slide">
+                <h1>Launch in Minutes</h1>
+                <h5>Say goodbye to long development times. Our intuitive interface allows you to create, edit, and
+                    publish your project faster than ever before.</h5>
+            </div>
+
+            <div class="slide">
+                <h1>Fully Responsive</h1>
+                <h5>Your website will look stunning on any device. Whether it's a desktop, tablet, or mobile phone –
+                    your
+                    design will automatically adjust to fit any screen.</h5>
+            </div>
+
+            <button id="next" onclick="changeSlide(1)">&#10095;</button>
+
+            <div class="dots">
+                <span class="dot active" onclick="setSlide(0)"></span>
+                <span class="dot" onclick="setSlide(1)"></span>
+                <span class="dot" onclick="setSlide(2)"></span>
+                <span class="dot" onclick="setSlide(3)"></span>
+            </div>
+        </div>
+
+        <button class="create-account">Create an Account</button>
+    </section>
+
+
+    <section id="free-sample">
+        <div id="free-sample-container">
+            <p id="sample-header">Free sample</p>
+            <h2>Powerful Generator and Free Figma Sources</h2>
+            <p>Startup Framework contains components and complex blocks which can easily be integrated into almost any
+                design.
+                All of the components are made in the same style and can easily be integrated into projects,
+                allowing you to create hundreds of solutions.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section id="prodact-info">
+        <img src="resources\images\laptop.png" alt="laptop" class="laptop">
+
+        <div id="prodact-container">
+            <h3>We Create Something New</h3>
+            <h5 id="prodact-about">We have created a new product that will help designers, developers,
+                and companies create websites for their startups quickly and easily.
+            </h5>
+
+            <div id="details-container">
+                <div class="details">
+                    <i class="fa-regular fa-clone"></i>
+                    <p class="detail-title">30 New feature pages</p>
+                    <p class="detail-text">Startup Framework contains components and complex blocks which can easily.
+                    </p>
+                </div>
+
+                <div class="details">
+                    <i class="fa-regular fa-gem"></i>
+                    <p class="detail-title">Useful Symbol Components</p>
+                    <p class="detail-text">Samples will show you the feeling on how to play around using the components.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="account">
+        <div class="form-description">
+            <h3>We solve digital problems with an outstanding creative flare</h3>
+            <p>We have created a new product that will help designers,
+                developers and companies create websites for their startups quickly and easily.
+            </p>
+        </div>
+
+        <div class="form-slider">
+            <div class="form-button">
+                <button class="signUp active">Sign up</button>
+
+                <button class="logIn">Log in</button>
+            </div>
+            <div class="form active">
+                <form action="index.html" method="get">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <br>
+                    <input type="password" name="password" placeholder="Your password" required>
+                    <br>
+                    <button class="submit" type="submit">Create account</button>
+                    <div class="separator">
+                        <span>or</span>
+                    </div>
+                    <button class="google">
+                        <i class="fa-brands fa-google"></i> Sign in with Google
+                    </button>
+
+                </form>
+            </div>
+            <div class="form">
+                <form action="index.html" method="get">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <br>
+                    <input type="password" name="password" placeholder="Your password" required>
+                    <br>
+                    <button class="submit-btn" type="submit">Login</button>
+                    <div class="separator">
+                        <span>or</span>
+                    </div>
+                    <button class="google">
+                        <i class="fa-brands fa-google"></i> Log in with Google
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="testimonial">
+        <div id="testimonial-container">
+            <h3 id="clients">Our happy clients</h3>
+            <div id="clients-container">
+                <div class="client 1">
+                    <img src="resources\images\Client1.png" alt="Rayhan Curran">
+                    <div class=clients-text>
+                        <p class="review">Get a fully retina ready site when you build with Startup Framework.
+                            Websites look sharper and more gorgeous on devices with retina display support
+                        </p>
+                        <p class="name">- Rayhan Curran</p>
+                    </div>
+
+
+                </div>
+                <div class="client 2">
+                    <img src="resources\images\Client2.png" alt="Kayley Frame">
+
+                    <div class="clients-text">
+                        <p class="review">As a business targeting high net worth individuals,
+                            we were looking for a slick, cool and mini-malistic design for our website
+                        </p>
+                        <p class="name">- Kayley Frame</p>
+                    </div>
+                </div>
+                <div class="client 3">
+                    <img src="resources\images\Client3.png" alt="Gene Whitfield">
+                    <div class="clients-text">
+                        <p>The most important part of the Startup Framework is the samples
+                        </p>
+                        <p class="name">- Gene Whitfield</p>
+                    </div>
+                </div>
+                <div class="client 4">
+                    <img src="resources\images\Client4.png" alt="Allan Kims">
+                    <div class="clients-text">
+                        <p>I’ve built my website with Startup just in one day, and it was ready-to-go.
+                        </p>
+                        <p class="name">- Allan Kim</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="call-to-action">
+        <div id="title">
+            <h2>Easy to setup.
+                <br>
+                Easy to maintain
+            </h2>
+            <h5>Bootstrap is a widely-used, sleek,
+                intuitive and powerful front-end framework for faster and easier web development.
+            </h5>
+        </div>
+        <div id="action-buttons">
+            <button id="play-btn"><img src="resources/images/Triangle.png" alt=""></button>
+            <button id="start-btn">Get Started</button>
+        </div>
+
+    </section>
+
+
+    <section id="ShowCase">
+        <div id="showcase-container">
+            <div id="showcase-title">
+                <h3>Last works</h3>
+                <button id="all-woks-btn">View all Works</button>
+            </div>
+            <div id="works-container">
+                <div class="work">
+                    <img src="resources/images/Work1.png" alt="Mozart Project">
+                    <p>UI kit</p>
+                    <h5>Mozart Project</h5>
+                </div>
+                <div class="work">
+                    <img src="resources/images/Work2.png" alt="Startup Framework 2.0">
+                    <p>Framework</p>
+                    <h5>Startup Framework 2.0</h5>
+                </div>
+                <div class="work">
+                    <img src="resources/images/Work3.png" alt="Startup Framework 2.0">
+                    <p>Framework</p>
+                    <h5>Startup Framework 2.0</h5>
+                </div>
+                <div class="work">
+                    <img src="resources/images/Work4.png" alt="Air Forces">
+                    <p>Pictures</p>
+                    <h5>Air Forces</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="team">
+        <div id="team-container">
+            <div id="team-title">
+                <h3>Startup Crew</h3>
+                <h5>The most important part of the Startup Framework is the samples.
+                    The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.
+                </h5>
+            </div>
+            <div id="team-members">
+
+                <div class="member">
+                    <img src="resources/images/Member1.png" alt="Leah Salomon">
+                    <h5>Leah Salomon</h5>
+                    <p>UI Designer</p>
+                    <div class="member-socials">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-dribbble"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="resources/images/Member2.png" alt="Colin Timmons">
+                    <h5>Colin Timmons</h5>
+                    <p>UX Designer</p>
+                    <div class="member-socials">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-dribbble"></i>
+                    </div>
+                </div>
+
+
+                <div class="member">
+                    <img src="resources/images/Member3.png" alt="Miguel Osborne">
+                    <h5>Miguel Osborne</h5>
+                    <p>Front-end Developer</p>
+                    <div class="member-socials">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-skype"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="resources/images/Member4.png" alt="Taylor Simon">
+                    <h5>Taylor Simon</h5>
+                    <p>Product Manager</p>
+                    <div class="member-socials">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="resources/images/Member5.png" alt="Steven MacAlister">
+                    <h5>Steven MacAlister</h5>
+                    <p>Copyrighter</p>
+                    <div class="member-socials">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="contact">
+        <div id="contact-info">
+            <h3>Let’s Keep in Touch</h3>
+            <h5>
+                We have created a new product that will help designers, developers and companies create websites
+                for their startups quickly and easily.
+            </h5>
+            <div id="info-container">
+                <p><i class="fa-solid fa-phone"></i> +1 555 505 5050</p>
+                <p><i class="fa-solid fa-envelope"></i> info@designmodo.com</p>
+                <p>
+                    <i class="fa-solid fa-building"></i>
+                    <span>San Francisco, CA560 Bush St & 20th Ave, Apt5 San Francisco, 230909</span>
+                </p>
+            </div>
+        </div>
+
+        <div id="contact-form">
+            <form action="index.html">
+                <div id="name-budget-row">
+                    <div class="name-container">
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="name" placeholder="First name">
+                    </div>
+
+                    <div class="budget-container">
+                        <label for="budget">Budget</label>
+                        <select name="budget" id="budget">
+                            <option value="300">$300</option>
+                            <option value="500">$500</option>
+                            <option value="700">$700</option>
+                            <option value="1000">$1000</option>
+                            <option value="1500+">$1500+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your email</label>
+                    <input type="email" name="email" placeholder="name@mail.com" id="contact-email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" placeholder="Message..."></textarea>
+                </div>
+
+                <div id="send-row">
+                    <div id="send">
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree"></label>
+                        <span>Send me a copy</span>
+                    </div>
+
+                    <button id="send-btn" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="plans">
+        <div id="plans-title">
+            <h3>Plans & Pricing</h3>
+            <h5>Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</h5>
+        </div>
+        <div id="plans-container">
+            <div class="plan" id="starter">
+                <div class="plan-price">
+                    <h5>Starter</h5>
+                    <div class="price">
+                        <h2>9.99</h2>
+                        <p>$</p>
+                    </div>
+                </div>
+                <div class="plan-info">
+                    <div class="plan-active">
+                        <p><i class="fa-solid fa-check"></i>2 GB of space</p>
+                        <p><i class="fa-solid fa-check"></i>14 days of backups</p>
+                        <p><i class="fa-solid fa-check"></i>Social integrations</p>
+                        <p><i class="fa-solid fa-check"></i>Client billing</p>
+                    </div>
+                    <div class="plan-inactive">
+                        <p>Remote access</p>
+                        <p>Custom domain</p>
+                        <p>24 hours support</p>
+                        <p>Admin tools</p>
+                        <p>Collaboration tools</p>
+                        <p>User management</p>
+                    </div>
+                </div>
+                <button class="start-plan-btn">Get Started</button>
+            </div>
+
+            <div class="plan" id="professional">
+                <div class="plan-price">
+                    <h5>Professional</h5>
+                    <div class="price">
+                        <h2>19.99</h2>
+                        <p>$</p>
+                    </div>
+                </div>
+                <div class="plan-info">
+                    <div class="plan-active">
+                        <p><i class="fa-solid fa-check"></i>2 GB of space</p>
+                        <p><i class="fa-solid fa-check"></i>14 days of backups</p>
+                        <p><i class="fa-solid fa-check"></i>Social integrations</p>
+                        <p><i class="fa-solid fa-check"></i>Client billing</p>
+                        <p><i class="fa-solid fa-check"></i>Remote access</p>
+                        <p><i class="fa-solid fa-check"></i>Custom domain</p>
+                        <p><i class="fa-solid fa-check"></i>24 hours support</p>
+                    </div>
+                    <div class="plan-inactive">
+                        <p>Admin tools</p>
+                        <p>Collaboration tools</p>
+                        <p>User management</p>
+                    </div>
+                </div>
+                <button class="start-plan-btn">Get Started</button>
+            </div>
+
+
+            <div class="plan" id="team-plan">
+                <div class="plan-price">
+                <h5>Team</h5>
+                <div class="price">
+                    <h2>49.99</h2>
+                    <p>$</p>
+                </div>
+                </div>
+                <div class="plan-info">
+                    <div class="plan-active">
+                        <p><i class="fa-solid fa-check"></i>2 GB of space</p>
+                        <p><i class="fa-solid fa-check"></i>14 days of backups</p>
+                        <p><i class="fa-solid fa-check"></i>Social integrations</p>
+                        <p><i class="fa-solid fa-check"></i>Client billing</p>
+                        <p><i class="fa-solid fa-check"></i>Remote access</p>
+                        <p><i class="fa-solid fa-check"></i>Custom domain</p>
+                        <p><i class="fa-solid fa-check"></i>24 hours support</p>
+                        <p><i class="fa-solid fa-check"></i>Admin tools</p>
+                        <p><i class="fa-solid fa-check"></i>Collaboration tools</p>
+                        <p><i class="fa-solid fa-check"></i>User management</p>
+                    </div>
+
+                </div>
+                <button class="start-plan-btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div id="copyrights">
+            <h2>Startup 3</h2>
+            <div id="left-copyrights">
+                <p>Privacy Policy</p>
+                <p>Terms</p>
+                <div id="footer-socials">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="menu">
+            <div id="menu-container">
+                <p>Tour</p>
+                <p>Features</p>
+                <p>Pricing Plans</p>
+                <p>Our Works</p>
+                <p>Brands</p>
+                <p>Contacts</p>
+            </div>
+            <p id="rights">© 2017 Designmodo. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
