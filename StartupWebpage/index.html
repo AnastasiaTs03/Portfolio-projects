@@ -15,67 +15,70 @@
 <body>
 
     <section id="home">
-        <nav>
-            <ul id="navigation">
-                <li class="navigation-item">
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#features">Features</a>
-                </li>
-                <li>
-                    <a href="pricing">Pricing</a>
-                </li>
-                <li>
-                    <a href="our-team">Our Team</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div id="home-container">
+            <nav>
+                <ul id="navigation">
+                    <li class="navigation-item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="our-team">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
 
 
-        <div id="slider">
-            <p id="startup">Startup 3</p>
-            <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <div class="slide active">
-                <h1>Forget About Code</h1>
-                <h5>Startup Framework gives you complete freedom over your creative process – you don't have to think
-                    about any technical aspects. There are no limits and absolutely no coding.</h5>
+            <div id="slider">
+                <p id="startup">Startup 3</p>
+                <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="slide active">
+                    <h1>Forget About Code</h1>
+                    <h5>Startup Framework gives you complete freedom over your creative process – you don't have to
+                        think
+                        about any technical aspects. There are no limits and absolutely no coding.</h5>
+                </div>
+
+                <div class="slide">
+                    <h1>Design Without Limits</h1>
+                    <h5>With a vast set of pre-made components, you can build any layout effortlessly. No technical
+                        knowledge
+                        is required – just drag, drop, and create.</h5>
+                </div>
+
+                <div class="slide">
+                    <h1>Launch in Minutes</h1>
+                    <h5>Say goodbye to long development times. Our intuitive interface allows you to create, edit, and
+                        publish your project faster than ever before.</h5>
+                </div>
+
+                <div class="slide">
+                    <h1>Fully Responsive</h1>
+                    <h5>Your website will look stunning on any device. Whether it's a desktop, tablet, or mobile phone –
+                        your
+                        design will automatically adjust to fit any screen.</h5>
+                </div>
+
+                <button id="next" onclick="changeSlide(1)">&#10095;</button>
+
+                <div class="dots">
+                    <span class="dot active" onclick="setSlide(0)"></span>
+                    <span class="dot" onclick="setSlide(1)"></span>
+                    <span class="dot" onclick="setSlide(2)"></span>
+                    <span class="dot" onclick="setSlide(3)"></span>
+                </div>
             </div>
 
-            <div class="slide">
-                <h1>Design Without Limits</h1>
-                <h5>With a vast set of pre-made components, you can build any layout effortlessly. No technical
-                    knowledge
-                    is required – just drag, drop, and create.</h5>
-            </div>
-
-            <div class="slide">
-                <h1>Launch in Minutes</h1>
-                <h5>Say goodbye to long development times. Our intuitive interface allows you to create, edit, and
-                    publish your project faster than ever before.</h5>
-            </div>
-
-            <div class="slide">
-                <h1>Fully Responsive</h1>
-                <h5>Your website will look stunning on any device. Whether it's a desktop, tablet, or mobile phone –
-                    your
-                    design will automatically adjust to fit any screen.</h5>
-            </div>
-
-            <button id="next" onclick="changeSlide(1)">&#10095;</button>
-
-            <div class="dots">
-                <span class="dot active" onclick="setSlide(0)"></span>
-                <span class="dot" onclick="setSlide(1)"></span>
-                <span class="dot" onclick="setSlide(2)"></span>
-                <span class="dot" onclick="setSlide(3)"></span>
-            </div>
+            <button class="create-account">Create an Account</button>
         </div>
-
-        <button class="create-account">Create an Account</button>
     </section>
 
 
@@ -141,7 +144,7 @@
                     <br>
                     <input type="password" name="password" placeholder="Your password" required>
                     <br>
-                    <button class="submit" type="submit">Create account</button>
+                    <button id="signup-btn" type="submit">Create account</button>
                     <div class="separator">
                         <span>or</span>
                     </div>
@@ -157,7 +160,7 @@
                     <br>
                     <input type="password" name="password" placeholder="Your password" required>
                     <br>
-                    <button class="submit-btn" type="submit">Login</button>
+                    <button id="login-btn" type="submit">Log in</button>
                     <div class="separator">
                         <span>or</span>
                     </div>
@@ -470,11 +473,11 @@
 
             <div class="plan" id="team-plan">
                 <div class="plan-price">
-                <h5>Team</h5>
-                <div class="price">
-                    <h2>49.99</h2>
-                    <p>$</p>
-                </div>
+                    <h5>Team</h5>
+                    <div class="price">
+                        <h2>49.99</h2>
+                        <p>$</p>
+                    </div>
                 </div>
                 <div class="plan-info">
                     <div class="plan-active">
