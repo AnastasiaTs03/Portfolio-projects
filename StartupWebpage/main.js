@@ -108,22 +108,31 @@ menuToggle.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
 });
 
+const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+  });
+});
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".plan-short-btn");
+  const buttons = document.querySelectorAll(".plan-short-btn");
 
-        buttons.forEach(button => {
-            button.addEventListener("click", function () {
-                const plan = this.closest(".plan");
-                const planInfo = plan.querySelector(".plan-info");
-              
-                planInfo.classList.toggle("show");
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      const plan = this.closest(".plan");
+      const planInfo = plan.querySelector(".plan-info");
 
-                if (planInfo.classList.contains("show")) {
-                    this.textContent = "Hide details";
-                } else {
-                    this.textContent = "See details";
-                }
-            });
-        });
+      planInfo.classList.toggle("show");
+
+      if (planInfo.classList.contains("show")) {
+        this.textContent = "Hide details";
+      } else {
+        this.textContent = "See details";
+      }
     });
+  });
+});
