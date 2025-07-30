@@ -16,19 +16,29 @@
 
     <section id="home">
         <div id="home-container">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            <div id="mobile-menu" class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#prodact-info">Features</a></li>
+                    <li><a href="#plans">Pricing</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
             <nav>
                 <ul id="navigation">
                     <li class="navigation-item">
                         <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#features">Features</a>
+                        <a href="#prodact-info">Features</a>
                     </li>
                     <li>
-                        <a href="pricing">Pricing</a>
+                        <a href="#plans">Pricing</a>
                     </li>
                     <li>
-                        <a href="our-team">Our Team</a>
+                        <a href="#team">Our Team</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -77,10 +87,9 @@
                 </div>
             </div>
 
-            <button class="create-account">Create an Account</button>
+            <button class="create-account">Create an Account </button>
         </div>
     </section>
-
 
     <section id="free-sample">
         <div id="free-sample-container">
@@ -100,26 +109,78 @@
         <img src="resources\images\laptop.png" alt="laptop" class="laptop">
 
         <div id="prodact-container">
-            <h3>We Create Something New</h3>
-            <h5 id="prodact-about">We have created a new product that will help designers, developers,
-                and companies create websites for their startups quickly and easily.
-            </h5>
+            <div id="product-container-text">
+                <h3>We Create Something New</h3>
+                <h5 id="prodact-about">We have created a new product that will help designers, developers,
+                    and companies create websites for their startups quickly and easily.
+                </h5>
+            </div>
+            <div class="slider2">
+                <div id="details-container">
+                    <div class="slide2 active">
+                        <div class="detail">
+                            <i class="fa-regular fa-clone"></i>
+                            <p class="detail-title">30 New feature pages</p>
+                            <p class="detail-text">Startup Framework contains components and complex blocks which can
+                                easily be integrated into your project.
+                            </p>
+                        </div>
+                        <div class="detail">
+                            <i class="fa-regular fa-gem"></i>
+                            <p class="detail-title">Useful Symbol Components</p>
+                            <p class="detail-text">Samples will show you the feeling on how to play around using the
+                                components.
+                            </p>
+                        </div>
+                    </div>
 
-            <div id="details-container">
-                <div class="details">
-                    <i class="fa-regular fa-clone"></i>
-                    <p class="detail-title">30 New feature pages</p>
-                    <p class="detail-text">Startup Framework contains components and complex blocks which can easily.
-                    </p>
+
+                    <div class="slide2">
+                        <div class="detail">
+                            <i class="fa-solid fa-rocket"></i>
+                            <p class="detail-title">Fast Prototyping</p>
+                            <p class="detail-text">Create fully-functional prototypes in minutes with ready-to-use
+                                components.
+                            </p>
+                        </div>
+                        <div class="detail">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                            <p class="detail-title">Cross-Platform</p>
+                            <p class="detail-text">Design once and use across desktop, tablet, and mobile platforms.</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="slide2">
+                        <div class="detail">
+                            <i class="fa-regular fa-object-group"></i>
+                            <p class="detail-title">Modern Aesthetics</p>
+                            <p class="detail-text">Sleek, modern UI that keeps your startup looking professional and
+                                fresh.
+                            </p>
+                        </div>
+                        <div class="detail">
+                            <i class="fa-regular fa-hourglass-half"></i>
+                            <p class="detail-title">24/7 Support</p>
+                            <p class="detail-text">We’re here to help at any time with your questions or technical
+                                needs.
+                            </p>
+                        </div>
+
+                    </div>
+
+
                 </div>
-
-                <div class="details">
-                    <i class="fa-regular fa-gem"></i>
-                    <p class="detail-title">Useful Symbol Components</p>
-                    <p class="detail-text">Samples will show you the feeling on how to play around using the components.
-                    </p>
+                <div class="dots2">
+                    <span class="dot2 active" onclick="setSlide(0)"></span>
+                    <span class="dot2" onclick="setSlide(1)"></span>
+                    <span class="dot2" onclick="setSlide(2)"></span>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -229,7 +290,7 @@
                 <br>
                 Easy to maintain
             </h2>
-            <h5>Bootstrap is a widely-used, sleek,
+            <h5 class="responsive-heading">Bootstrap is a widely-used, sleek,
                 intuitive and powerful front-end framework for faster and easier web development.
             </h5>
         </div>
@@ -415,86 +476,105 @@
             <h3>Plans & Pricing</h3>
             <h5>Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</h5>
         </div>
+
         <div id="plans-container">
-            <div class="plan" id="starter">
-                <div class="plan-price">
-                    <h5>Starter</h5>
-                    <div class="price">
-                        <h2>9.99</h2>
-                        <p>$</p>
+
+            <div class="plan">
+                <div class="plan-header">
+                    <div class="plan-price">
+                        <h5>Starter</h5>
+                        <div class="price">
+                            <h2>9.99</h2>
+                            <p>$</p>
+                        </div>
                     </div>
+                    <p class="plan-short">Perfect for individuals and small projects</p>
+                    <button class="plan-short-btn">See details</button>
                 </div>
-                <div class="plan-info">
-                    <div class="plan-active">
-                        <p><i class="fa-solid fa-check"></i>2 GB of space</p>
-                        <p><i class="fa-solid fa-check"></i>14 days of backups</p>
-                        <p><i class="fa-solid fa-check"></i>Social integrations</p>
-                        <p><i class="fa-solid fa-check"></i>Client billing</p>
+
+                <div class="plan-content">
+                    <div class="plan-info">
+                        <div class="plan-active">
+                            <p><i class="fa-solid fa-check"></i>2 GB of space</p>
+                            <p><i class="fa-solid fa-check"></i>14 days of backups</p>
+                            <p><i class="fa-solid fa-check"></i>Social integrations</p>
+                            <p><i class="fa-solid fa-check"></i>Client billing</p>
+                        </div>
+                        <div class="plan-inactive">
+                            <p>Remote access</p>
+                            <p>Custom domain</p>
+                            <p>24 hours support</p>
+                            <p>Admin tools</p>
+                            <p>Collaboration tools</p>
+                            <p>User management</p>
+                        </div>
                     </div>
-                    <div class="plan-inactive">
-                        <p>Remote access</p>
-                        <p>Custom domain</p>
-                        <p>24 hours support</p>
-                        <p>Admin tools</p>
-                        <p>Collaboration tools</p>
-                        <p>User management</p>
-                    </div>
+                    <button class="start-plan-btn">Get Started</button>
                 </div>
-                <button class="start-plan-btn">Get Started</button>
             </div>
 
-            <div class="plan" id="professional">
-                <div class="plan-price">
-                    <h5>Professional</h5>
-                    <div class="price">
-                        <h2>19.99</h2>
-                        <p>$</p>
+            <div class="plan">
+                <div class="plan-header">
+                    <div class="plan-price">
+                        <h5>Professional</h5>
+                        <div class="price">
+                            <h2>19.99</h2>
+                            <p>$</p>
+                        </div>
                     </div>
+                    <p class="plan-short">Advanced features for growing teams</p>
+                    <button class="plan-short-btn">See details</button>
                 </div>
-                <div class="plan-info">
-                    <div class="plan-active">
-                        <p><i class="fa-solid fa-check"></i>2 GB of space</p>
-                        <p><i class="fa-solid fa-check"></i>14 days of backups</p>
-                        <p><i class="fa-solid fa-check"></i>Social integrations</p>
-                        <p><i class="fa-solid fa-check"></i>Client billing</p>
-                        <p><i class="fa-solid fa-check"></i>Remote access</p>
-                        <p><i class="fa-solid fa-check"></i>Custom domain</p>
-                        <p><i class="fa-solid fa-check"></i>24 hours support</p>
+                <div class="plan-content">
+                    <div class="plan-info">
+                        <div class="plan-active">
+                            <p><i class="fa-solid fa-check"></i>2 GB of space</p>
+                            <p><i class="fa-solid fa-check"></i>14 days of backups</p>
+                            <p><i class="fa-solid fa-check"></i>Social integrations</p>
+                            <p><i class="fa-solid fa-check"></i>Client billing</p>
+                            <p><i class="fa-solid fa-check"></i>Remote access</p>
+                            <p><i class="fa-solid fa-check"></i>Custom domain</p>
+                            <p><i class="fa-solid fa-check"></i>24 hours support</p>
+                        </div>
+                        <div class="plan-inactive">
+                            <p>Admin tools</p>
+                            <p>Collaboration tools</p>
+                            <p>User management</p>
+                        </div>
                     </div>
-                    <div class="plan-inactive">
-                        <p>Admin tools</p>
-                        <p>Collaboration tools</p>
-                        <p>User management</p>
-                    </div>
+                    <button class="start-plan-btn">Get Started</button>
                 </div>
-                <button class="start-plan-btn">Get Started</button>
             </div>
 
-
-            <div class="plan" id="team-plan">
-                <div class="plan-price">
-                    <h5>Team</h5>
-                    <div class="price">
-                        <h2>49.99</h2>
-                        <p>$</p>
+            <div class="plan">
+                <div class="plan-header">
+                    <div class="plan-price">
+                        <h5>Team</h5>
+                        <div class="price">
+                            <h2>49.99</h2>
+                            <p>$</p>
+                        </div>
                     </div>
+                    <p class="plan-short">Full-featured for collaboration and scaling</p>
+                    <button class="plan-short-btn">See details</button>
                 </div>
-                <div class="plan-info">
-                    <div class="plan-active">
-                        <p><i class="fa-solid fa-check"></i>2 GB of space</p>
-                        <p><i class="fa-solid fa-check"></i>14 days of backups</p>
-                        <p><i class="fa-solid fa-check"></i>Social integrations</p>
-                        <p><i class="fa-solid fa-check"></i>Client billing</p>
-                        <p><i class="fa-solid fa-check"></i>Remote access</p>
-                        <p><i class="fa-solid fa-check"></i>Custom domain</p>
-                        <p><i class="fa-solid fa-check"></i>24 hours support</p>
-                        <p><i class="fa-solid fa-check"></i>Admin tools</p>
-                        <p><i class="fa-solid fa-check"></i>Collaboration tools</p>
-                        <p><i class="fa-solid fa-check"></i>User management</p>
+                <div class="plan-content">
+                    <div class="plan-info">
+                        <div class="plan-active">
+                            <p><i class="fa-solid fa-check"></i>2 GB of space</p>
+                            <p><i class="fa-solid fa-check"></i>14 days of backups</p>
+                            <p><i class="fa-solid fa-check"></i>Social integrations</p>
+                            <p><i class="fa-solid fa-check"></i>Client billing</p>
+                            <p><i class="fa-solid fa-check"></i>Remote access</p>
+                            <p><i class="fa-solid fa-check"></i>Custom domain</p>
+                            <p><i class="fa-solid fa-check"></i>24 hours support</p>
+                            <p><i class="fa-solid fa-check"></i>Admin tools</p>
+                            <p><i class="fa-solid fa-check"></i>Collaboration tools</p>
+                            <p><i class="fa-solid fa-check"></i>User management</p>
+                        </div>
                     </div>
-
+                    <button class="start-plan-btn">Get Started</button>
                 </div>
-                <button class="start-plan-btn">Get Started</button>
             </div>
         </div>
     </section>
