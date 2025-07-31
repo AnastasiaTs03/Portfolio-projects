@@ -1,4 +1,8 @@
 # Interactive Web Page Project
+## Live Demo
+
+You can visit the live site here: [https://myjscheatsheet.netlify.app/](https://myjscheatsheet.netlify.app/)
+
 
 ## Level 1 — UI Basics
 
