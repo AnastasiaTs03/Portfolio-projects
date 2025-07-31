@@ -2,6 +2,8 @@
 
 This is a personal portfolio website created for practice and to demonstrate my web development skills. It showcases my projects, technical abilities.
 
+You can visit the live site here: [https://startupwebsite3.netlify.app/](https://startupwebsite3.netlify.app/)
+
 ## Design Template
 
 The design is based on a free and publicly available template from the Figma Community:
